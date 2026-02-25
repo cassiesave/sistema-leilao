@@ -201,6 +201,7 @@ public class listagemVIEW extends javax.swing.JFrame {
     private javax.swing.JTable listaProdutos;
     // End of variables declaration//GEN-END:variables
 
+    // Implementação da listagem de produtos conforme atividade 2
     private void listarProdutos(){
         try {
             ProdutosDAO produtosdao = new ProdutosDAO();
