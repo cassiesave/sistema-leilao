@@ -17,7 +17,7 @@ public class ProdutosDAO {
         PreparedStatement pstm = null;
 
         try {
-            conn = new conectaDAO().conectaBD();
+            conn = new conectaDAO().connectDB();
             pstm = conn.prepareStatement(sql);
 
             pstm.setString(1, produto.getNome());
@@ -48,7 +48,7 @@ public class ProdutosDAO {
         ResultSet rs = null;
 
         try {
-            conn = new conectaDAO().conectaBD();
+            conn = new conectaDAO().connectDB();
             pstm = conn.prepareStatement(sql);
             rs = pstm.executeQuery();
 
@@ -86,7 +86,7 @@ public class ProdutosDAO {
         PreparedStatement pstm = null;
 
         try {
-            conn = new conectaDAO().conectaBD();
+            conn = new conectaDAO().connectDB();
             pstm = conn.prepareStatement(sql);
 
             pstm.setString(1, "Vendido");
@@ -116,7 +116,7 @@ public class ProdutosDAO {
         ResultSet rs = null;
 
         try {
-            conn = new conectaDAO().conectaBD();
+            conn = new conectaDAO().connectDB();
             pstm = conn.prepareStatement(sql);
             pstm.setString(1, "Vendido");
 
